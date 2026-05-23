@@ -1,0 +1,6 @@
+unitName,partyName,invoiceDate,discountPercent,discountAmount,totalAmount,quantity,rate,salePrice,companyLedgerId,voucherTypeId,materialName,insertStatus
+Gowardhan Sanstha,4,02.04.2026,0,0,1670,1,1670,1670,6066,1,Cheese - 100 gm Unsalted,
+Gowardhan Sanstha,51,01.04.2026,0,0,109200,70,1560,1560,6066,1,Calf Starter Feed - 10kg In,
+Gowardhan Sanstha,53,06.04.2026,0,0,1650,1,1650,1650,6066,1,Calf Starter Feed - 20 kg Ex,
+Dudhsagar dairy,110,07.04.2026,0,0,66800,40,1670,1670,6066,1, Cheese - 100 gm Unsalted,
+Dudhsagar dairy,112,07.04.2026,0,0,14300,10,1430,1430,6066,1,Calf Starter Feed - 10kg In,
