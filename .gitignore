@@ -9,3 +9,6 @@ node_modules/
 captcha.png
 storageState.json
 .env
+/logs/
+/DataDriven/Example file
+/DataDriven/Final file

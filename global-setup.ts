@@ -11,7 +11,7 @@ async function hasValidSession() {
     return false;
   }
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext({ storageState: statePath });
   const page = await context.newPage();
 
@@ -43,7 +43,7 @@ export default async function globalSetup(config: FullConfig) {
     return;
   }
 
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
   const page = await context.newPage();
 
