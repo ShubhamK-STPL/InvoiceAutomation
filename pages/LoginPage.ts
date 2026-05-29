@@ -48,7 +48,7 @@ export class LoginPage extends BasePage {
     while (attempts < maxRetries && !loginSuccess) {
       try {
         console.log(`Login attempt ${attempts + 1} of ${maxRetries}`);
-        await this.page.goto('https://hitechdairy.in/login');
+        await this.page.goto(`${process.env.BASE_URL}/login`);
         
         await this.enterCredentials();
         

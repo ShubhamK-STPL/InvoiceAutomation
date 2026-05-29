@@ -8,7 +8,7 @@ export class SalesInvoicePage extends BasePage {
   }
 
   async goto() {
-    await this.page.goto('https://hitechdairy.in/account-finance/transactions/sales-invoice');
+    await this.page.goto(`${process.env.BASE_URL}/account-finance/transactions/sales-invoice`);
     await this.page.waitForLoadState('networkidle');
     await this.waitForStep();
   }

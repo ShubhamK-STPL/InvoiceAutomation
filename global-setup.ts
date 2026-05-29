@@ -3,7 +3,7 @@ import { loginWithRetry } from './tests/helpers/auth';
 import fs from 'fs';
 
 const statePath = 'storageState.json';
-const protectedUrl = 'https://hitechdairy.in/account-finance/transactions/sales-invoice-list';
+const protectedUrl = `${process.env.BASE_URL}/account-finance/transactions/sales-invoice-list`;
 
 async function hasValidSession() {
   if (!fs.existsSync(statePath)) {

@@ -40,7 +40,7 @@ export async function loginWithRetry(page: Page, maxRetries: number = 3) {
   while (attempts < maxRetries && !loginSuccess) {
     try {
       console.log(`Login attempt ${attempts + 1} of ${maxRetries}`);
-      await page.goto('https://hitechdairy.in/login');
+      await page.goto(`${process.env.BASE_URL}/login`);
       await verifyLoginPageAndEnterCredentials(page);
       await page.locator('#captcha1').click({ position: { x: 96, y: 15 } });
       await page.locator('#captcha1').waitFor({ state: 'visible' });
